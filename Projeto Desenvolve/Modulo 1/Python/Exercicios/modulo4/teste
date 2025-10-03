@@ -1,0 +1,7 @@
+resultado = 0
+while True:
+    n = int(input())
+    operador = (input())
+    if operador == "fim": break
+    
+print(resultado)
