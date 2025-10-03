@@ -1,0 +1,10 @@
+/* .destaque { color: #A67841; }
+.Moda-2-hex { color: #593C2C; }
+.Moda-3-hex { color: #A67E6F; }
+.background{ color: #D9B6A9; }
+.principal { color: #0D0000; } */
+
+html {
+    background: #D9B6A9;
+    color: #0D0000;
+}
