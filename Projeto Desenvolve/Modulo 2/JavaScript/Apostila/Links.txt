@@ -1,0 +1,14 @@
+Palavras Reservadas:
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Lexical_grammar#palavras-chave
+
+Operados:
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
+
+String:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+WTFJavascript
+https://github.com/denysdovhan/wtfjs?tab=readme-ov-file#-examples
+
+Erros de HTTP:
+https://http.cat/

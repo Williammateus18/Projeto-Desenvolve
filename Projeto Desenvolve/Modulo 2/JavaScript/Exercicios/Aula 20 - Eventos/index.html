@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Elemento</title>
+
+    <style>
+        aside {
+            position: absolute;
+            top: 0;
+            right:0;
+            background: #e0BB00;
+            height: 100vh;
+        }
+        .titulo {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fb32cc;
+        }
+        .alterado-cor-bg {
+            background-color: #fd0206;
+            color: #fffefa;
+        }
+        #texto, #meu-botao {
+            height: 54px;
+            border-radius: 4px;
+            background-color: #fffefa;
+            width: 150px;
+        }
+
+        #meu-botao {
+            background-color: #fd0206;
+            color: #fffefa;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo-principal" class="titulo principal">Exemplo de Seletores de Query</h1>
+        <nav>
+            <ul>
+                <li class="menu-item">Início</li>
+                <li class="menu-item">Sobre</li>
+                <li class="menu-item">Contato</li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <section id="secao-principal">
+            <h2>Seção Principal</h2>
+            <p class="paragrafo">Este é o primeiro parágrafo da seção principal</p>
+            <p class="paragrafo">Outro parágrafo</p>
+            <input id="texto" type="text">
+            <button id="meu-botao" name="meu-botao">Clique aqui</button>
+        </section>
+        <aside>
+            <h2>Barra Lateral</h2>
+            <p>Parágrafo da barra lateral</p>
+        </aside>
+    </main>  
+    <script src="./index.js"></script>
+</body>
+</html>

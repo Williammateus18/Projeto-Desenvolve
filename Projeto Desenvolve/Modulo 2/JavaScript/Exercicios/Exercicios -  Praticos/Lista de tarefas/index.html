@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 70%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .tarefa {
+      margin-left: 10px;
+      font-size: 18px;
+    }
+
+    .concluida {
+      text-decoration: line-through;
+      color: gray;
+      font-style: italic;
+    }
+
+    .nao-concluida {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lista de Tarefas</h1>
+
+  <div>
+    <input type="text" id="descricaoInput" placeholder="Digite uma nova tarefa..." />
+    <button onclick="adicionarTarefa()">Adicionar</button>
+  </div>
+
+  <ul id="listaTarefas"></ul>
+
+  <script>
+    // Array para armazenar as tarefas
+    let tarefas = [];
+
+    // Função para adicionar uma nova tarefa
+    function adicionarTarefa() {
+      const descricao = document.getElementById('descricaoInput').value.trim();
+
+      if (descricao !== '') {
+        // Cria objeto tarefa e adiciona ao array
+        const novaTarefa = {
+          descricao: descricao,
+          status: false
+        };
+        tarefas.push(novaTarefa);
+
+        // Limpa o input
+        document.getElementById('descricaoInput').value = '';
+
+        // Atualiza a lista na tela
+        renderizarTarefas();
+      }
+    }
+
+    // Função para alternar o status da tarefa
+    function alternarStatus(index) {
+      tarefas[index].status = !tarefas[index].status;
+      renderizarTarefas();
+    }
+
+    // Função para renderizar a lista de tarefas
+    function renderizarTarefas() {
+      const lista = document.getElementById('listaTarefas');
+      lista.innerHTML = '';
+
+      tarefas.forEach((tarefa, index) => {
+        const li = document.createElement('li');
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = tarefa.status;
+        checkbox.onchange = () => alternarStatus(index);
+
+        const span = document.createElement('span');
+        span.textContent = tarefa.descricao;
+        span.className = 'tarefa ' + (tarefa.status ? 'concluida' : 'nao-concluida');
+
+        li.appendChild(checkbox);
+        li.appendChild(span);
+        lista.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
+</html>

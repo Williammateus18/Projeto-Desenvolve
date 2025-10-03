@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <style>
+        aside {
+            position: absolute;
+            top: 0;
+            right:0;
+            background: #e0BB00;
+            height: 100vh;
+        }
+        .titulo {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fb32cc;
+        }
+        .alterado-cor-bg {
+            background-color: #fd0206;
+            color: #fffefa;
+        }
+        #texto, #meu-botao, #esquecer {
+            height: 54px;
+            border-radius: 4px;
+            background-color: #fffefa;
+            width: 250px;
+            font-size: 24px;
+        }
+
+        #esquecer {
+            background-color: #C30000;
+        }
+
+        #meu-botao {
+            background-color: #056aff;
+            color: #fffefa;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>localStorage e sessionStorage</h1>
+    <input type="text" id="texto" placeholder="Digite seu nome">
+    <button id="meu-botao" name="meu-botao">Lembrar de você</button>
+    <button id="esquecer" >Esquecer de tudo</button>    
+    <script src="./index.js"></script>
+</body>
+</html>
