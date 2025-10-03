@@ -1,0 +1,33 @@
+p, ul {
+border: solid 1px black;
+padding: 2%;
+margin: 30px;
+
+background-color: yellow;
+
+}
+
+.paragrafo {
+overflow: hidden;
+}
+
+a {
+    position: relative;
+    height: 200px;
+}
+
+body {
+    background-color:  aquamarine;  
+    }
+
+    em, a, strong {
+    border: dashed 2px red;
+    background-color:aliceblue;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: inline-block;
+}

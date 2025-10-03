@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Doce Amor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="container">
+    <div class="corpo">
+        <div class="header">
+            <img src="./img/Logo.jpeg" alt="imagem" height="150px" width="150px">
+            <h1>Doce Amor</h1>
+        </div>
+        <h2 class="subtitulo">Torta de Palito</h2>
+        <div class="card-torta-palito">
+            <div class="card">
+                <img src="./img/img1.jpeg">
+                <div>
+                  <h1>Torta Ferreiro</h1>
+                  <button onclick="abrirModal()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/img2.jpeg">
+                <div>
+                  <h1>Torta Kinder</h1>
+                  <button onclick="abrirModal1()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/img3.jpeg">
+                <div>
+                  <h1>Torta Snickers</h1>
+                  <button onclick="abrirModal2()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/img4.jpeg">
+                <div>
+                  <h1>Bombom Raffaelo</h1>
+                  <button onclick="abrirModal3()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+        <h2 class="subtitulo">Torta de Vitrine</h2>
+        <div class="vitrine">
+            <div class="card">
+                <img src="./img/torta1.jpeg">
+                <div>
+                  <h1>Doce de Leite</h1>
+                  <button onclick="abrirModal4()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/torta2.jpeg">
+                <div>
+                  <h1>Maracujá e Chocolate</h1>
+                  <button onclick="abrirModal5()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/torta3.jpeg">
+                <div>
+                  <h1>Cheesecake</h1>
+                  <button onclick="abrirModal6()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/torta4.jpeg">
+                <div>
+                  <h1>Holandesa</h1>
+                  <button onclick="abrirModal7()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/torta5.jpeg">
+                <div>
+                  <h1>Oreo e Chocolate</h1>
+                  <button onclick="abrirModal8()" class="btn">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="janela-modal" id="janela-modal">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <h1>Torta/Brownie Ferreiro</h1>
+                <p>
+                    A 'Torta/Brownie Ferreiro' é uma combinação irresistível e prática para saborear a qualquer momento. Apresenta uma textura incrivelmente perfeita que derrete na boca. O coração desta delícia é composto por um brownie intensamente chocolateado, aveludado por uma mousse de Nutella e um toque generoso de Nutella pura. Para finalizar, a torta é cuidadosamente banhada em um chocolate rico e amendoins crocantes para um contraste de texturas sublime. Cada mordida é uma experiência única e inesquecível.
+                </p>
+            </div>
+        </div>
+        <div class="janela-modal1" id="janela-modal1">
+            <div class="modal1">
+                <button class="fechar1" id="fechar1">X</button>
+                <h1>Torta Kinder</h1>
+                <p>
+                    Desfrute desta deliciosa sobremesa de Kinder, perfeita para satisfazer aquela vontade de uma mordida irresistível. Ela é meticulosamente montada com um brownie suculento como base, seguido por uma mousse cremosa de Nutella, que derrete na boca. Ao topo, uma camada de ganache branco, que traz uma doçura equilibrada. Para finalizar, esta obra-prima é banhada em chocolate de sua escolha: preto ou branco, ambos de qualidade premium. Este é mais do que apenas um doce, é uma experiência culinária incrível no formato de torta/brownie no palito.
+                </p>
+            </div>
+        </div>
+        <div class="janela-modal2" id="janela-modal2">
+            <div class="modal2">
+                <button class="fechar2" id="fechar2">X</button>
+                <h1>Torta Snickers</h1>
+                <p>
+                    Apresentamos nossa irresistível Torta Snickers, uma elegante combinação de chocolate com caramelo de amendoim. Este deleite é aprimorado por uma base de brownie, criando uma harmonia perfeita com o recheio. A riqueza decadente do chocolate, a doçura sutil do caramelo de amendoim e a base de brownie fofa e rica fazem dela uma sobremesa irresistível. Você precisa experimentar este espetáculo de sabor! Esta é a nossa requintada Torta Snickers no palito, uma verdadeira tentação ao paladar.
+                </p>
+            </div>
+        </div>
+        <div class="janela-modal3" id="janela-modal3">
+            <div class="modal3">
+                <button class="fechar3" id="fechar3">X</button>
+                <h1>Bombom Raffaelo</h1>
+                <p>
+                    A nossa exclusiva torta no palito, um doce inigualável, é a pedida perfeita para os amantes do bombom Raffaelo. Esta fatia especial é uma réplica perfeita do bombom, meticulosamente elaborada com uma base crocante de biscoito e um creme de coco irresistível. Acrescentamos ainda uma camada de ganache de chocolate branco, antes de banhar todo o conjunto em uma generosa cobertura de chocolate branco. Uma experiência deliciosa e única que você não encontrará em qualquer lugar.
+                </p>
+            </div>
+        </div>
+        <div class="janela-modal4" id="janela-modal4">
+            <div class="modal4">
+                <button class="fechar4" id="fechar4">X</button>
+                <h1>Doce de Leite</h1>
+                <p>Desfrute da nossa sedutora torta 'Doce de Leite', um verdadeiro clássico da categoria 'Torta de Vitrine'. Este prato é um encanto equilibrado, pronto para cativar seu paladar. A aventura gastronômica inicia-se com uma base de biscoito primorosamente crocante, evoluindo para uma mousse de doce de leite leve e aveludada, generosamente infundida com um doce de leite irresistivelmente rico. Como toque final, a torta é graciosamente coberta com uma camada extra de doce de leite e polvilhada com um crocante de amendoim artesanal. Uma verdadeira obra-prima da confeitaria, que celebra majestosamente o sabor do tradicional doce de leite.</p>
+            </div>
+        </div>
+        <div class="janela-modal5" id="janela-modal5">
+            <div class="modal5">
+                <button class="fechar5" id="fechar5">X</button>
+                <h1>Maracujá e Chocolate</h1>
+                <p>
+                    A 'Maracujá e Chocolate' é uma torta de vitrine especialmente concebida para os verdadeiros apreciadores da harmoniosa união entre o chocolate e o maracujá. Esta delícia é meticulosamente montada em camadas, começando com uma crocante base de biscoito amanteigado. Em seguida, uma suave mousse de chocolate amargo adiciona um toque sofisticado, contrastando perfeitamente com a refrescante mousse de maracujá. E para finalizar, uma camada de vibrante geleia de maracujá é cuidadosamente aplicada, coroando este delicioso deleite com um toque cítrico e ligeiramente doce.
+                </p>
+            </div>
+        </div>
+        <div class="janela-modal6" id="janela-modal6">
+            <div class="modal6">
+                <button class="fechar6" id="fechar6">X</button>
+                <h1>Cheesecake</h1>
+                <p>
+                    Apresentamos a nossa Cheesecake, a queridinha por todos! Esta sobremesa é uma delícia irrepreensível, extremamente cremosa e delicada. A sua composição inicia-se com uma base de biscoito amanteigado, seguida pelo nosso creme Cheesecake excepcionalmente suave. O toque final fica por conta da geleia de morango ou frutas vermelhas, adicionando uma explosão de frescor a cada mordida. Não perca a oportunidade de experimentar e se deliciar com o sabor incrível desta sobremesa de vitrine. Garantimos um deleite para o seu paladar!
+                </p>
+            </div>
+        </div>
+        <div class="janela-modal7" id="janela-modal7">
+            <div class="modal7">
+                <button class="fechar7" id="fechar7">X</button>
+                <h1>Holandesa</h1>
+                <p>
+                    A 'Holandesa' é uma torta de vitrine tradicional e requintada, encantadoramente composta por um creme delicado e absolutamente irresistível. Sua base, feita com um biscoito amanteigado, confere uma textura incomparável que complementa a suavidade do creme. O grand finale é a incrível ganache de chocolate, que enriquece o sabor do prato e adiciona um toque extra de sofisticação e luxo. Uma verdadeira tentação que conquista todos os paladares com sua combinação surpreendentemente harmoniosa e ousada.
+                </p>
+            </div>
+        </div>
+        <div class="janela-modal8" id="janela-modal8">
+            <div class="modal8">
+                <button class="fechar8" id="fechar8">X</button>
+                <h1>Oreo e Chocolate</h1>
+                <p>
+                    Essa torta e para os amantes do Oreo. Composto por um base de biscoito Oreo, uma Mousse leve e deliciosa de chocolate amargo pra deixar um sabor equilibrado, uma Mousse de Oreo super cremoso e finalizada com ganache
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

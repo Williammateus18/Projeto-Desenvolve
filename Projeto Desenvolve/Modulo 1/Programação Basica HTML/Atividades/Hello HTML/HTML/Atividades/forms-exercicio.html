@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa de Satisfação</title>
+    </head>
+    <body>
+        <header>
+            <h1>Dados Pessoais</h1>
+        </header>
+        <main>
+            <form action="forms.html" method="post">
+                <div>
+                    <p>
+                        <label for="Nome">Nome:</label>
+                        <input type="text" placeholder="Insira seu Nome completo" id="nome">
+                    </p>
+                    <p>
+                        <label for="E-mail">E-mail:</label>
+                        <input type="email" placeholder="Insira seu E-mail" id="email">
+                    </p>
+                    <p>
+                        <label for="Telefone de Contato">Telefone de Contato:</label>
+                        <Input type="tel" placeholder="Insira seu telefone" id="telefone">
+                    </p> 
+                </div>
+                <div>
+                    <p>
+                        <h2>Estado civil:</h2>
+                        <select>
+                            <option></option>
+                            <option>Solteiro</option>
+                            <option>Casado</option>
+                            <option>Divociado</option>
+                        </select>
+                    </p>
+                    <p>
+                        <h3>Você gostou do conteudo?</h3>
+                        <label for="Sim1">Sim</label>
+                        <input type="radio" id="Sim1" name="pergunta1">
+                        <label for="Não1">Não</label>
+                        <input type="radio" id="Não1" name="pergunta1" >
+                    </p>
+                    <p>
+                        <h3>Gostaria de aprender?</h3>
+                        <label for="Sim2">Sim</label>
+                        <input type="radio" id="sim2" name="Pergunta2" >
+                        <label for="Não2">Não</label>
+                        <input type="radio" id="Não2" name="Pergunta2" >
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <input type="checkbox" id="termos">
+                        <label for="termos">Concordo em compartilhar os dados.</label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

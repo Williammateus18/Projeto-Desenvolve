@@ -1,0 +1,68 @@
+/* Principal: pink;
+background:#fff
+destaque: #FA4D7E
+*/
+#cabecario {
+    display: flex;
+}
+
+.corpo {
+    display: inline;
+    font-family:'Courier New', Courier, monospace;
+}
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    background-color: pink;
+}
+
+.menu-horizontal li {
+    display: inline;
+}
+
+.menu-horizontal li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.menu-horizontal li a:hover {
+    background-color:darksalmon;
+}
+
+.produtos {
+    display: flex;
+}
+
+.produtos div {
+    background: pink;
+    border-radius: 12px;
+    margin: 2px;
+    padding: 2px;
+    width: 200px;
+}
+
+.produtos div img{
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.produtos div h2 {
+    display: block;
+    text-align: center;
+    color:#FA4D7E;
+}
+
+.produtos div a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.produtos div a:hover {
+    text-decoration:underline
+}

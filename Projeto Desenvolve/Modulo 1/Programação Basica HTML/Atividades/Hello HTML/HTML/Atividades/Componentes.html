@@ -1,0 +1,106 @@
+<!--<!DOCTYPE HTML - Linguagem de programação para o tipo 5. O mais atual.
+    <html></html> Delimitação onde a pagina vai estar.
+    <head></head> Cabecote da aba, utilizando o <tittle></tittle> consegue personalizar a aba do navegador.
+    <body> - É o corpo da pagina, aqui fica tudo que vai ser exibido na pagina.
+    <h1> - É utilizado para os titulos de nivel 1, vai até o nivel 6, quando maior o nivel, menores ficam os destaques das fontes.
+    <p> - É utilizado para demarcar paragrafos.
+    <ul> - Lista sem ordem, marcadores com pontos os itens da lista, precisa ser usado junto da <li> para listar os itens.
+    <ol> - Lista ordenada, marcadores com número, também precisa ser usado com o elemento <li> para listar os itens.
+    <dl> Lista dos itens que precisam ser definidos, utilizado para siglas e apreviações. 
+    Precisa ser usado junto de dois elementos... <dt> é o titulo ou sigla e o <dd> que é a definição, essa lista parece com um glossário.
+    
+        Elementos para destaque de textos...
+        <Strong> utilizado para fazer o texto ficar em Negrito. 
+        <em> Utilizado para fazer o texto ficar em Italico.
+    <abbr> São abreviações, utilizado para ao passar o mouse em cima da sigla, irá aparecer a definição da sigla.
+        utilizado como <abbr tittle="DEFINIÇÃO">SIGLA</abbr>
+    <q> Utilizado para citações de textos tirados de outra fonte. 
+
+        IMAGEM
+    IMAGEM ABSOLUTA
+    <img scr> Utilizado para carregar imagens de outro fonte.
+    IMAGEM RELATIVA
+    <img scr="./O LOCAL ONDE A IMAGEM ESTÁ" UTILIZADO PARA CARREGAR IMAGEM LOCALMENTE.
+    
+        FORMATAÇÃO DA PÁGINA
+    <header> Utilizado para definir o cabecote da pagina, seria os subs-menus, onde é possivel ser direcionado para uma determinada pagina.
+    <main> É a parte principal da pagina, será o conteudo em destaque da pagina.
+    <aside> É as partes laterais da pagina, utilizado para mostrar outros conteudos que podem ser acessados.
+    <footer> É o rodape da pagina, utilizado para colocar links para outras paginas.
+    <section> É os artigos divididos em seções, é a separação dos artigos.
+    <div> É o mais utilizado na programação, também divide os artigos em partes no corpo.
+    <Article> É definido como um artigo.
+
+    REFERENCIA
+    REFERENCIA ABSOLUTA ABAIXO UTILIZADO PARA NAVEGAR EM PAGINAS WEB.
+    <a href="LINK DA PAGINA">TIUTLO QUE VAI APARECER</a> - Ira direcionar a uma pagina da web que você selecionou.
+    REFERENCIA RELATIVA ABAIXO UTILIZADO PARA NAVEGAR POR PAGINAS LOCALMENTE.
+    <a href="NOME DO ARQUIVO">TITULO QUE VAI APARECER</a> Ira direcionar para outra aba do mesmo site.
+    REFERENCIA VIA ANGORA ABAIXO.
+    <a href="#ID DO ELEMENTO">TITULO QUE VAI APARECER</a> Ira te direcionar para o elemento selecionado, por exemplo, ao inicio da pagina.
+
+    <id="IDENTIFICAÇÃO DO ELEMENTO"> USADO PARA IDENTIFICAÇÃO DE UM ELEMENTO.
+
+       TABELAS
+    <Table> Utilizado para delimitar a tabela.
+        <tr> Linha
+        <th> utilizado tambem para receber dados, porem com formatação em negrito e centralizados.
+        <td> coluna, utilizado para receber os dados.
+            EXEMPLO
+            <Table> 
+                <tr>
+                    <td>Casa</td>
+                    <td>Rua</td>
+                </tr>
+            </table>
+       FORMATAÇÃO DA TABELA
+            <border> Utilizado para delimitar as bordas da tabela. Utiliza o <border ="COLOCAR O VALOR REFERENTE A BORDA EM PIXEL. EX: 1"
+            <thead> Utilizado para o cabecote da tabela.
+            <tbody> Corpo da tabela.
+            <tfoot> Utilizado no rodape da tabela.
+            <colspan> Determina quantas colunas um elemento ira preencher, utilizado na mesma linha do elemento em frente a tag.
+            <rowspan> Determina quantas linhas um elemento ira preencher, utilizado na mesma linha do elemento em frente a tag.
+
+        FORMULARIO
+            <form> Delimita o campo do formulario.
+            <label> texto que aparece a frente da caixa do formulario.
+            <input> Entrada de dados.
+            type - Tipo de entrada de dados. 
+               Exemplos: Text, number, password...
+            <placeholder> Utilizado para a escrita dentro do campo de preeenchimento.
+            Input tipo submet é utilizado para declarar o botão de "enviar".
+            value - utilizado para mudar o que aparece no botão 
+               Exemplo: <Input type="submet" value="Login"/>.
+            Caso utilize um id, e o elemento for na linha do label, ao clicar no texto, o campo de preenchiemtno será 
+            selecionado para preenchimento. 
+               Exemplo: <label for="senha">Senha</label>, mas para esse comando funcionar, precisa criar um id primeiramente com esse nome.
+
+            <Textarea></Textarea> Utilizado para campos de preenchimento de texto, normalmente utilizados para campos de informações.
+            <input type="radio" /> - São os botões com opção de seleção.
+            Ao definir o type como radio, é importante criar uma <label> com o nome da caixa de seleção.
+            Caso tenha mais de 1 opção, é necessario colocar o elemento "name" para identificar que todas as opções são do mesmo campo,
+            caso contrario, poderá selecionar todas as caixas.
+
+            <Checkbox> Utilizado como um checklist, pode ter varios itens selecionados, normalmente usado em termos de uso.
+            A escrita será preenchida como <label>
+                Exemplo: <input type="checkbox" id="termos"/>
+                <label for="termos">Aceito os termos de uso< /> 
+            
+            E por ultimo, o type <select>, utilizado como lista de itens, os itens são preenchidos com <option>
+            Normalmente usados com as opções de estados e cidade.
+                Exemplo: <select>
+                <option>Minas Gerais</option>
+                <option>Rio de Janeiro</option>
+            Caso queira que mais de uma opção seja selecionada, basta colocar multiple na frente do select, e para selecionar
+            pasta clicar com o mouse e pressionando o Ctrl.
+                Exemplo: <select multiple />
+
+                CSS
+
+            Inline: Formatação do texto, ao declarar o paragrafo, basta adicionar o style="color: COR DESEJADA ; font-size: TAMANHO EM PX"
+            Interno: Utilize o style no campo do header.
+            Externo: Criar um arquivo com a extensão .css e importar ele usando o elemento <link href="arquivo.css" rel="tipo de arquivo" = stylesheet
+            
+-->
+
+
